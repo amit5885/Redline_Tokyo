@@ -1,5 +1,6 @@
 import React from 'react';
 import { Crosshair, Zap, Radio, Activity } from 'lucide-react';
+import machineHead from "../assets/machine_head.avif";
 
 const features = [
   {
@@ -66,7 +67,7 @@ const AboutSection: React.FC = () => {
             {/* Image Cell */}
             <div className="bg-[#0a0a0a] relative group overflow-hidden min-h-[300px]">
               <img 
-                src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2670&auto=format&fit=crop" 
+                src={machineHead} 
                 alt="Car Detail" 
                 className="absolute inset-0 w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
               />

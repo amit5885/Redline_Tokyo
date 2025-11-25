@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import heroImage from "../assets/hero.avif";
 
 const Hero: React.FC = () => {
   return (
@@ -8,12 +9,12 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2694&auto=format&fit=crop"
+          src={heroImage}
           alt="Tokyo Night"
-          className="w-full h-full object-cover opacity-40 grayscale-[50%] contrast-125"
+          className="w-full h-full object-cover opacity-40 grayscale-50 contrast-125"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.8)_1px,transparent_1px),linear-gradient(rgba(0,0,0,0.8)_1px,transparent_1px)] bg-[size:40px_40px] opacity-20"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-[#050505] via-[#050505]/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.8)_1px,transparent_1px),linear-gradient(rgba(0,0,0,0.8)_1px,transparent_1px)] bg-size-[40px_40px] opacity-20"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10 pt-20">
@@ -83,4 +84,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-

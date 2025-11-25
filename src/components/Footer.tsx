@@ -1,5 +1,7 @@
 import React from "react";
-import { Github, Twitter, Instagram } from "lucide-react";
+import { Github } from "./Icons/Github";
+import { Twitter } from "./Icons/Twitter";
+import { Instagram } from "./Icons/Instagram";
 
 const Footer: React.FC = () => {
   return (
@@ -48,4 +50,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-
